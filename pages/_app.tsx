@@ -5,6 +5,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
+
 function MyApp({ Component, pageProps }: AppProps) {
 
   const theme = createTheme({
@@ -15,9 +17,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <div className='main'>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
+
     </ThemeProvider>
   )
 
