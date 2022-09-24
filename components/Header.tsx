@@ -5,7 +5,7 @@ import { AppBar, Typography } from "@mui/material";
 
 
 
-export default class Header extends React.Component {
+export default class Header extends React.Component<{}, { appName: string }> {
 
 
     constructor(props: any) {
