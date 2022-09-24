@@ -1,3 +1,3 @@
-export const optionChain = (state = {}, action) => {
+export const optionChain = (state = {}, action: any) => {
     return state;
 }
